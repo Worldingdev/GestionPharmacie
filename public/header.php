@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dashboard - NiceAdmin Bootstrap Template</title>
+  <title>Royal Pharma</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/pharma.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -140,12 +140,12 @@
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="components-alerts.html" class="text-light">
+            <a href="saveUser.php" class="text-light">
               <i class="bi bi-circle"></i><span>Enregistrer utilisateur</span>
             </a>
           </li>
           <li>
-            <a href="components-accordion.html" class="text-light">
+            <a href="printUser.php" class="text-light">
               <i class="bi bi-circle"></i><span>Afficher tous les utilisateurs</span>
             </a>
           </li>
@@ -173,7 +173,7 @@
             </a>
           </li>
           <li>
-            <a href="forms-layouts.html" class="text-light">
+            <a href="printProduct.php" class="text-light">
               <i class="bi bi-circle"></i><span>Afficher tous les produits</span>
             </a>
           </li>
@@ -201,7 +201,7 @@
             </a>
           </li>
           <li>
-            <a href="tables-data.html" class="text-light">
+            <a href="printCoustomers.php" class="text-light">
               <i class="bi bi-circle"></i><span>Afficher les clients</span>
             </a>
           </li>
@@ -220,7 +220,7 @@
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-bar-chart"></i><span>Vente</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-bar-chart"></i><span>Ventes</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
@@ -229,12 +229,12 @@
             </a>
           </li>
           <li>
-            <a href="charts-apexcharts.html" class="text-light">
+            <a href="printSales.php" class="text-light">
               <i class="bi bi-circle"></i><span>Afficher toutes les ventes</span>
             </a>
           </li>
           <li>
-            <a href="charts-echarts.html" class="text-light">
+            <a href="printSalesDay.php" class="text-light">
               <i class="bi bi-circle"></i><span>Afficher toutes ventes d’une journée donnée</span>
             </a>
           </li>
