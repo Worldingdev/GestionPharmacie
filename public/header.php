@@ -248,7 +248,7 @@
       
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-login.html">
+        <a class="nav-link collapsed" href="index.php">
           <i class="bi bi-box-arrow-right"></i>
           <span>Deconnecter</span>
         </a>
