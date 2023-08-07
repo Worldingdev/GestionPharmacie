@@ -56,7 +56,7 @@
                     <p class="text-center small">Enter your username & password to login</p>
                   </div>
 
-                  <form class="row g-3 needs-validation" novalidate>
+                  <form class="row g-3 needs-validation" method="post" action="../dao/UtilisateurDao.php" novalidate>
 
                     <div class="col-12">
                       <label for="yourUsername" class="form-label">Username</label>
@@ -74,7 +74,7 @@
                     </div>
 
                     <div class="col-12">
-                      <button class="btn btn-primary w-100" type="submit">Login</button>
+                      <button class="btn btn-primary w-100" name="login" type="submit">Login</button>
                     </div>
                   </form>
 

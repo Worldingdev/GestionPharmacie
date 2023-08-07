@@ -1,4 +1,5 @@
 <?php
+namespace GESTIONPHARMACIE\config;
 
 class Connection{
    
@@ -11,7 +12,7 @@ private $connexion;
 
 // Methode de la Création d'une connexion
 public function connection(){
-    $this->connexion = new mysqli($this->serveur, $this->utilisateur, $this->motdepasse, $this->base_de_donnees);
+    $this->connexion = new \mysqli($this->serveur, $this->utilisateur, $this->motdepasse, $this->base_de_donnees);
     // Vérifier la connexion
     if ($this->connexion->connect_error) {
         die("Échec de la connexion : " . $this->connexion->connect_error);

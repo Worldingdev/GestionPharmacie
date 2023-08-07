@@ -1,4 +1,5 @@
 <?php
+namespace GESTIONPHARMACIE\app;
 
 class Utilisateur{
 
@@ -48,7 +49,7 @@ class Utilisateur{
         return $this->ninu;
     }
 
-    public function getPasssord(){
+    public function getPassword(){
         return $this->password;
     }
 
@@ -79,7 +80,7 @@ class Utilisateur{
         $this->ninu = $ninu;
     }
 
-    public function setPasssord($password){
+    public function setPassword($password){
         $this->password = $password;
     }
 

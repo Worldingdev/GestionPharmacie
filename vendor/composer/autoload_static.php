@@ -25,6 +25,13 @@ class ComposerStaticInitb46dd38dcfeed75f69a203a34e8e9b7a
             'Ramsey\\Uuid\\' => 12,
             'Ramsey\\Collection\\' => 18,
         ),
+        'G' => 
+        array (
+            'GESTIONPHARMACIE\\dao\\' => 21,
+            'GESTIONPHARMACIE\\controller\\' => 28,
+            'GESTIONPHARMACIE\\config\\' => 24,
+            'GESTIONPHARMACIE\\app\\' => 21,
+        ),
         'B' => 
         array (
             'Brick\\Math\\' => 11,
@@ -51,6 +58,22 @@ class ComposerStaticInitb46dd38dcfeed75f69a203a34e8e9b7a
         'Ramsey\\Collection\\' => 
         array (
             0 => __DIR__ . '/..' . '/ramsey/collection/src',
+        ),
+        'GESTIONPHARMACIE\\dao\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/dao',
+        ),
+        'GESTIONPHARMACIE\\controller\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/controller',
+        ),
+        'GESTIONPHARMACIE\\config\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/config',
+        ),
+        'GESTIONPHARMACIE\\app\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
         ),
         'Brick\\Math\\' => 
         array (

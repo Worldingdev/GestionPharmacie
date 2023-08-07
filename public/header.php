@@ -108,7 +108,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
+              <a class="dropdown-item d-flex align-items-center" href="index.php">
                 <i class="bi bi-box-arrow-right"></i>
                 <span>Sign Out</span>
               </a>
@@ -136,7 +136,7 @@
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-menu-button-wide"></i><span>Utilisateurs</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-menu-button-wide"></i><span>Gestion Utilisateurs</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
@@ -150,7 +150,7 @@
             </a>
           </li>
           <li>
-            <a href="components-badges.html" class="text-light">
+            <a href="modifyUser.php" class="text-light">
               <i class="bi bi-circle"></i><span>Modifier utilisateur</span>
             </a>
           </li>
@@ -164,11 +164,11 @@
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-journal-text"></i><span>Produits</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-journal-text"></i><span>Gestion Produits</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="forms-elements.html" class="text-light">
+            <a href="saveProduct.php" class="text-light">
               <i class="bi bi-circle"></i><span>Enregistrer produit</span>
             </a>
           </li>
@@ -178,7 +178,7 @@
             </a>
           </li>
           <li>
-            <a href="forms-editors.html" class="text-light">
+            <a href="modifyProduct.php" class="text-light">
               <i class="bi bi-circle"></i><span>Modifier un produit par son code</span>
             </a>
           </li>
@@ -192,11 +192,11 @@
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-layout-text-window-reverse"></i><span>Clients</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-layout-text-window-reverse"></i><span>Gestion Clients</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="tables-general.html" class="text-light">
+            <a href="saveCoustomers.php" class="text-light">
               <i class="bi bi-circle"></i><span>Enregistrer clients</span>
             </a>
           </li>
@@ -206,7 +206,7 @@
             </a>
           </li>
           <li>
-            <a href="tables-data.html" class="text-light">
+            <a href="modifyCoustomers.php" class="text-light">
               <i class="bi bi-circle"></i><span>Modifier un client par son code</span>
             </a>
           </li>
@@ -220,11 +220,11 @@
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-bar-chart"></i><span>Ventes</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-bar-chart"></i><span>Gestion Ventes</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="charts-chartjs.html" class="text-light">
+            <a href="saveSale.php" class="text-light">
               <i class="bi bi-circle"></i><span>Effectuer une Vente</span>
             </a>
           </li>

@@ -4,12 +4,12 @@ include("header.php");
 <main id="main" class="main">
 
 <div class="pagetitle">
-  <h1>Enregistrer Utilisateur</h1>
+  <h1>Modifier Utilisateur</h1>
   <nav>
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="dashboard.php">Acceuil</a></li>
-      <li class="breadcrumb-item">Gestion utilisateur</li>
-      <li class="breadcrumb-item active">Enregistrer</li>
+      <li class="breadcrumb-item">Gestion Utilisateur</li>
+      <li class="breadcrumb-item active">Modifier</li>
     </ol>
   </nav>
 </div><!-- End Page Title -->
@@ -20,32 +20,39 @@ include("header.php");
 
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Formulaire d'enregistrement</h5>
+          <h5 class="card-title">Formulaire de modification</h5>
+
+            <form class="d-flex">
+                <div class="col-sm-8">
+                    <input class="form-control" type="search" placeholder="Entrer l'Id de l'utilisateur" aria-label="Search">
+                </div>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
 
           <!-- General Form Elements -->
-          <form method="post" action="../dao/UtilisateurDao.php" >
+          <form>
             <div class="row mb-3">
-              <label for="inputText"  class="col-sm-4 col-form-label">Nom</label>
+              <label for="inputText" class="col-sm-4 col-form-label">Nom</label>
               <div class="col-sm-10">
-                <input type="text" name="name" class="form-control">
+                <input type="text" class="form-control">
               </div>
             </div>
             <div class="row mb-3">
-              <label for="inputText"  class="col-sm-4 col-form-label">Nom utilisateur</label>
+              <label for="inputText" class="col-sm-4 col-form-label">Nom utilisateur</label>
               <div class="col-sm-10">
-                <input type="text" name="username" class="form-control">
+                <input type="text" class="form-control">
               </div>
             </div>
             <div class="row mb-3">
               <label for="inputNumber" class="col-sm-4 col-form-label">Telephone</label>
               <div class="col-sm-10">
-                <input type="number" name="tel" class="form-control">
+                <input type="number" class="form-control">
               </div>
             </div>
             <div class="row mb-3">
               <label for="inputNumber" class="col-sm-4 col-form-label">NIF/CIN</label>
               <div class="col-sm-10">
-                <input type="number" name="NUNI" class="form-control">
+                <input type="number" class="form-control">
               </div>
             </div>
             <div class="row mb-3">
@@ -76,7 +83,7 @@ include("header.php");
             
             <div class="row mb-10">
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button class="btn btn-secondary me-md-2" name="save" type="submit">Enregistrer</button>
+                    <button class="btn btn-secondary me-md-2" type="submit">Modifier</button>
                     <button class="btn btn-outline-secondary" type="reset">Annuler</button>
                 </div>
             </div>
