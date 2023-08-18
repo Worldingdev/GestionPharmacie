@@ -4,10 +4,10 @@
     },
     "autoload": {
         "psr-4": {
-            "GESTIONPHARMACIE\\app\\":  "app/",
-            "GESTIONPHARMACIE\\config\\":  "config/",
-            "GESTIONPHARMACIE\\controller\\":  "controller/",
-            "GESTIONPHARMACIE\\dao\\":  "dao/"
+            "GESTIONPHARMACIE\\app\\":  "../app/",
+            "GESTIONPHARMACIE\\config\\":  "../config/",
+            "GESTIONPHARMACIE\\controller\\":  "../controller/",
+            "GESTIONPHARMACIE\\dao\\":  "../dao/"
         }
     }
 }

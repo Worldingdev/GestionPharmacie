@@ -61,19 +61,19 @@ class ComposerStaticInitb46dd38dcfeed75f69a203a34e8e9b7a
         ),
         'GESTIONPHARMACIE\\dao\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/dao',
+            0 => __DIR__ . '/../..' . '/../dao',
         ),
         'GESTIONPHARMACIE\\controller\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/controller',
+            0 => __DIR__ . '/../..' . '/../controller',
         ),
         'GESTIONPHARMACIE\\config\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/config',
+            0 => __DIR__ . '/../..' . '/../config',
         ),
         'GESTIONPHARMACIE\\app\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/app',
+            0 => __DIR__ . '/../..' . '/../app',
         ),
         'Brick\\Math\\' => 
         array (
