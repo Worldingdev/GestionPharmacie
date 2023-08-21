@@ -27,10 +27,7 @@ class ComposerStaticInitb46dd38dcfeed75f69a203a34e8e9b7a
         ),
         'G' => 
         array (
-            'GESTIONPHARMACIE\\dao\\' => 21,
-            'GESTIONPHARMACIE\\controller\\' => 28,
-            'GESTIONPHARMACIE\\config\\' => 24,
-            'GESTIONPHARMACIE\\app\\' => 21,
+            'GESTIONPHARMACIE\\' => 17,
         ),
         'B' => 
         array (
@@ -59,21 +56,9 @@ class ComposerStaticInitb46dd38dcfeed75f69a203a34e8e9b7a
         array (
             0 => __DIR__ . '/..' . '/ramsey/collection/src',
         ),
-        'GESTIONPHARMACIE\\dao\\' => 
+        'GESTIONPHARMACIE\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/../dao',
-        ),
-        'GESTIONPHARMACIE\\controller\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/../controller',
-        ),
-        'GESTIONPHARMACIE\\config\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/../config',
-        ),
-        'GESTIONPHARMACIE\\app\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/../app',
+            0 => '/',
         ),
         'Brick\\Math\\' => 
         array (

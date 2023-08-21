@@ -1,5 +1,5 @@
 <?php
-namespace GESTIONPHARMACIE\config;
+//namespace GESTIONPHARMACIE\config;
 
 class Connection{
    
@@ -17,15 +17,7 @@ public function connection(){
     if ($this->connexion->connect_error) {
         die("Échec de la connexion : " . $this->connexion->connect_error);
     }
-    echo "Connexion réussie !";
     return $this->connexion;
-}
-
-
-
-// Methode de Fermeture de la connexion lorsque vous avez terminé
-public function disconnection(){
-    $this->connexion->close();
 }
 
 }

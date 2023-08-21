@@ -1,10 +1,10 @@
 <?php
-namespace GESTIONPHARMACIE\controller;
 
-require_once __DIR__ .'/../vendor/composer/autoload_real.php';
-use GESTIONPHARMACIE\app\Utilisateur;
-use GESTIONPHARMACIE\config\Connection;
-use Ramsey\Uuid\Uuid;
+
+require '../app/Utilisateur.php';
+
+
+
 
 
 
@@ -13,7 +13,7 @@ class ControlUtilisateur{
     private $user;
 
     public function Login(){
-        $this->user = new Utilisateur(null,
+        $this->user = new GESTIONPHARMACIE\app\Utilisateur(null,
         null,null,null,null,null,
         null);
        
@@ -27,21 +27,9 @@ class ControlUtilisateur{
     }
 
     public function Save(){
-        $this->user = new Utilisateur(null,
+        $this->user = new GESTIONPHARMACIE\app\Utilisateur(null,
         null,null,null,null,null,
         null);
-        $connect = new Connection();
-        $connect->connection();
-        do{
-        $uuid = Uuid::uuid4();
-        $query = $connect->prepare("SELECT  * FROM Utilisateur where Id=?");
-        $query->execute($uuid);
-        $query->store_result();
-        $users = $query->num_rows();
-        }while($users>0);
-        $connect->disconnection();
-
-        $this->user->setId($uuid);
         
         if (isset($_POST['name'])) {
             $this->user->setNom( htmlentities($_POST['name']));
@@ -63,5 +51,7 @@ class ControlUtilisateur{
         }
         return $this->user;
     }
+
+   
 }
 ?>

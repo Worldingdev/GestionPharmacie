@@ -1,5 +1,8 @@
 <?php
 include("header.php");
+require '../dao/UtilisateurDao.php';
+$users = new UtilisateurDao();
+$allUsers = $users->selectUser(null);
 ?>
 <main id="main" class="main">
 
@@ -30,20 +33,25 @@ include("header.php");
                         <th scope="col">Nom Utilisateur</th>
                         <th scope="col">Telephone</th>
                         <th scope="col">CIN/NIF</th>
-                        <th scope="col">Password crypte</th>
+                        <!-- <th scope="col">Password crypte</th> -->
                         <th scope="col">type</th>
                     </tr>
                     </thead>
                     <tbody>
+                        <?php
+                        while($user = $allUsers->fetch_assoc()){
+                        ?>
                     <tr>
-                        <th scope="row">1</th>
-                        <td>Brandon Jacob</td>
-                        <td>Designer</td>
-                        <td>28</td>
-                        <td>2016-05-25</td>
-                        <td>28</td>
-                        <td>2016-05-25</td>
+                        <td><?php echo htmlentities($user['Id']);?></td>
+                        <td><?php echo htmlentities($user['Nom']);?></td>
+                        <td><?php echo htmlentities($user['Username']);?></td>
+                        <td><?php echo htmlentities($user['Telephone']);?></td>
+                        <td><?php echo htmlentities($user['NINU']);?></td>
+                        <!-- <td><?php //echo htmlentities($user['motDePasse']);?></td> -->
+                        <td><?php echo htmlentities($user['Type']);?></td>
                     </tr>
+                    <?php
+                        }?>
                     </tbody>
                 </table>
                 <!-- End Table with stripped rows -->

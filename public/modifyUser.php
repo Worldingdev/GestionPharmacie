@@ -1,5 +1,7 @@
 <?php
 include("header.php");
+require '../dao/UtilisateurDao.php';
+$users = new UtilisateurDao();
 ?>
 <main id="main" class="main">
 
@@ -22,43 +24,51 @@ include("header.php");
         <div class="card-body">
           <h5 class="card-title">Formulaire de modification</h5>
 
-            <form class="d-flex">
+            <form class="d-flex" method="post" action="">
                 <div class="col-sm-8">
-                    <input class="form-control" type="search" placeholder="Entrer l'Id de l'utilisateur" aria-label="Search">
+                    <input class="form-control" name="id" type="search" placeholder="Entrer l'Id de l'utilisateur" aria-label="Search" required>
                 </div>
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <button class="btn btn-outline-success" name="search" type="submit">Search</button>
             </form>
+
+
+            <?php
+              if(isset($_POST['id']) && isset($_POST['search'])){
+                $allUsers = $userDao->selectUser(htmlentities($_POST['id']));
+                $user = $allUsers->fetch_assoc();
+                if($user != null){
+            ?>
 
           <!-- General Form Elements -->
           <form>
             <div class="row mb-3">
               <label for="inputText" class="col-sm-4 col-form-label">Nom</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control">
+                <input type="text" value="<?php echo htmlentities($user['Nom']);?>" class="form-control">
               </div>
             </div>
             <div class="row mb-3">
               <label for="inputText" class="col-sm-4 col-form-label">Nom utilisateur</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control">
+                <input type="text" value="<?php echo htmlentities($user['Username']);?>" class="form-control">
               </div>
             </div>
             <div class="row mb-3">
               <label for="inputNumber" class="col-sm-4 col-form-label">Telephone</label>
               <div class="col-sm-10">
-                <input type="number" class="form-control">
+                <input type="number" value="<?php echo htmlentities($user['Telephone']);?>" class="form-control">
               </div>
             </div>
             <div class="row mb-3">
               <label for="inputNumber" class="col-sm-4 col-form-label">NIF/CIN</label>
               <div class="col-sm-10">
-                <input type="number" class="form-control">
+                <input type="number" value="<?php echo htmlentities($user['NINU']);?>" class="form-control">
               </div>
             </div>
             <div class="row mb-3">
               <label for="inputPassword" class="col-sm-4 col-form-label">Mot de passe</label>
               <div class="col-sm-10">
-                <input type="password" class="form-control">
+                <input type="password"  class="form-control" required>
               </div>
             </div>
             
@@ -67,13 +77,13 @@ include("header.php");
               <legend class="col-form-label col-sm-4 pt-0">Type</legend>
               <div class="col-sm-10">
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Admin" checked>
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Admin" <?php echo ($user['Type'] == 'Admin') ? "checked" : "";?>>
                   <label class="form-check-label" for="gridRadios1">
                     Admin
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Vendeur">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Vendeur" <?php echo ($user['Type'] == 'Vendeur') ? "checked" : "";?>>
                   <label class="form-check-label" for="gridRadios2">
                     Vendeur
                   </label>
@@ -89,7 +99,17 @@ include("header.php");
             </div>
 
           </form><!-- End General Form Elements -->
-
+                <?php
+                }else{
+                  ?>
+                   <div class="alert alert-warning alert-dismissible fade show col-sm-10" role="alert">
+                Aucun correspondant pour cet ID !!!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+                  <?php
+                }
+        }
+        ?>
         </div>
       </div>
 

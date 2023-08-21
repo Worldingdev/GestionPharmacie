@@ -11,9 +11,6 @@ return array(
     'Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),
     'Ramsey\\Uuid\\' => array($vendorDir . '/ramsey/uuid/src'),
     'Ramsey\\Collection\\' => array($vendorDir . '/ramsey/collection/src'),
-    'GESTIONPHARMACIE\\dao\\' => array($baseDir . '/../dao'),
-    'GESTIONPHARMACIE\\controller\\' => array($baseDir . '/../controller'),
-    'GESTIONPHARMACIE\\config\\' => array($baseDir . '/../config'),
-    'GESTIONPHARMACIE\\app\\' => array($baseDir . '/../app'),
+    'GESTIONPHARMACIE\\' => array('/'),
     'Brick\\Math\\' => array($vendorDir . '/brick/math/src'),
 );
